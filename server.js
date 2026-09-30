@@ -19,7 +19,7 @@ const contactRoutes = require("./Route/Contact");
 
 const server = http.createServer(app);
 const PORT = process.env.PORT || 5000;
-const allowedOrigins = (process.env.CLIENT_ORIGIN || "http://localhost:5173")
+const allowedOrigins = (process.env.CLIENT_ORIGIN ||  "https://instagramfrontend-7.onrender.com")
   .split(",")
   .map((origin) => origin.trim())
   .filter(Boolean);
