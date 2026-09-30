@@ -4,7 +4,7 @@ let io;
 const onlineUsers = {};
 
 const initSocket = (server) => {
-  const allowedOrigins = (process.env.CLIENT_ORIGIN || "https://localhost:5173")
+  const allowedOrigins = (process.env.CLIENT_ORIGIN || "https://instagramfrontend-7.onrender.com")
     .split(",")
     .map((origin) => origin.trim())
     .filter(Boolean);
